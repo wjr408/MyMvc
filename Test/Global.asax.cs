@@ -23,6 +23,7 @@ namespace Test
             defaultPath.Add("namespaces", "Test.Controllers");
             defaultPath.Add("assembly", "Test");
 
+
             MyRouteTable.Routes.Add("defaultRoute", new MyRoute("{controller}/{action}/{id}", defaultPath, new MyMvc.MVC.MvcRouteHandler()));
 
             //RouteConfig.RegisterRoutes(RouteTable.Routes);
