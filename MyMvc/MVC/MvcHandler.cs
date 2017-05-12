@@ -56,7 +56,7 @@ namespace MyMvc.MVC
                 //4.执行控制器的Action
                 controller.Execute(MyRouteData);
             }
-            catch
+            catch(Exception e)
             {
 
             }

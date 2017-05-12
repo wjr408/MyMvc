@@ -15,7 +15,7 @@ namespace Test.Controllers
 
         public void To404()
         {
-            HttpContext.Current.Response.Write("文哥是一个gay");
+            HttpContext.Current.Response.Write("欢姐是一个gay");
         }
     }
 }

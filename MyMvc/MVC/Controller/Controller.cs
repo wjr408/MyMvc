@@ -40,7 +40,7 @@ namespace MyMvc.MVC.Controller
             //4.通过action名称和对应的参数反射对应方法。
             //这里第二个参数可以不理会action字符串的大小写，第四个参数决定了当前请求的action的重载参数类型
             System.Reflection.MethodInfo mi = null;
-            if (actionName == "Index")
+            if (routeData.RouteValue.ContainsValue(actionName))
             {
                 mi = type.GetMethod(actionName,
                 BindingFlags.Public | BindingFlags.Instance | BindingFlags.IgnoreCase, null, paramTypes.ToArray(), null);

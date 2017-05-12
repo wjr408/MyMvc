@@ -17,12 +17,15 @@ namespace Test
 
             var defaultPath = new Dictionary<string, object>();
             defaultPath.Add("controller", "Home");
+            defaultPath.Add("controller1", "Home");
             defaultPath.Add("action", "Index");
-            defaultPath.Add("action404", "To404");
+            defaultPath.Add("action1", "Index1");
             defaultPath.Add("id", null);
             defaultPath.Add("namespaces", "Test.Controllers");
             defaultPath.Add("assembly", "Test");
 
+            InitRoute init = InitRoute.InitInstance();
+            init.InstanceController(defaultPath);
 
             MyRouteTable.Routes.Add("defaultRoute", new MyRoute("{controller}/{action}/{id}", defaultPath, new MyMvc.MVC.MvcRouteHandler()));
 

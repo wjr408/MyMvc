@@ -7,3 +7,4 @@ E:\学习\demo\MyMvc\MyMvc\MyMvc\bin\Debug\MyMvc.dll
 E:\学习\demo\MyMvc\MyMvc\MyMvc\bin\Debug\MyMvc.pdb
 E:\学习\demo\MyMvc\MyMvc\MyMvc\obj\Debug\MyMvc.dll
 E:\学习\demo\MyMvc\MyMvc\MyMvc\obj\Debug\MyMvc.pdb
+E:\学习\demo\MyMvc\MyMvc\MyMvc\obj\Debug\MyMvc.csprojResolveAssemblyReference.cache
