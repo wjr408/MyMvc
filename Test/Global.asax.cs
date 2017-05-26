@@ -17,9 +17,7 @@ namespace Test
 
             var defaultPath = new Dictionary<string, object>();
             defaultPath.Add("controller", "Home");
-            defaultPath.Add("controller1", "Home");
             defaultPath.Add("action", "Index");
-            defaultPath.Add("action1", "Index1");
             defaultPath.Add("id", null);
             defaultPath.Add("namespaces", "Test.Controllers");
             defaultPath.Add("assembly", "Test");

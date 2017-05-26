@@ -38,7 +38,17 @@ namespace MyMvc.Routing
                 myRouteData.RouteValue[key.Key] = key.Value;
             }
 
+            myRouteData.RouteValueFirst = new Dictionary<string, object>();
+            foreach (var key in this.SwiftRoute.DefaultPath)
+            {
+                myRouteData.RouteValueFirst[key.Key] = key.Value;
+            }
+
             //4.如果当前请求虚拟路径为空，则访问默认路由表。否则从当前请求的url里面去取当前的controller和action的名称
+            if (virtualPath == "")
+            {
+                virtualPath = "Home/Index";
+            }
             if (!string.IsNullOrEmpty(virtualPath))
             {
                 var arrTemplatePath = this.SwiftRoute.TemplateUrl.Split("{}/".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);

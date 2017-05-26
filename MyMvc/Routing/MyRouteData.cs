@@ -11,5 +11,7 @@ namespace MyMvc.Routing
         public IRouteHandler RouteHandler { get; set; }
 
         public Dictionary<string, object> RouteValue { get; set; }
+
+        public Dictionary<string, object> RouteValueFirst { get; set; }
     }
 }
